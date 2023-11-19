@@ -1,0 +1,96 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //float sum = 0, avg;
+            //int count = 0;
+            //Console.Write("enter marke {0} =", count + 1);
+            //float mark = float.Parse(Console.ReadLine());
+            //while (mark >= 0)
+            //{
+
+            //    sum = sum + mark;
+            //    count++;
+            //    Console.Write("enter mark {0}=", count + 1);
+
+            //    mark = float.Parse(Console.ReadLine());
+            //}
+
+            //avg = sum / count;
+            //Console.Write(avg);
+
+            //Console.WriteLine("---------console calcualtor---------");
+            //Console.WriteLine("1.enter A =");
+            //int A = int.Parse(Console.ReadLine());
+            //Console.WriteLine("1.enter B =");
+            //int B = int.Parse(Console.ReadLine());
+            //Console.Write("calc a+b=");
+            //Console.WriteLine(A + B);
+            //Console.Write("calc a*b=");
+            //Console.WriteLine(A * B);
+            //Console.Write("calc a/b=");
+            //Console.WriteLine(A / B);
+            //Console.Write("calc a-b=");
+            //Console.WriteLine(A - B);
+
+
+
+
+            Console.WriteLine("---------console calcualtor---------");
+            Console.WriteLine("1.enter A =        1.enter B =");
+            Console.SetCursorPosition(12, 1);
+            int A = int.Parse(Console.ReadLine());
+            Console.SetCursorPosition(31, 1);
+            int B = int.Parse(Console.ReadLine());
+            Console.WriteLine("2.calc a+b=");
+            Console.WriteLine("3.calc a*b=");
+            Console.WriteLine("4.calc a/b=");
+            Console.WriteLine("5.calc a-b=");
+            Console.WriteLine("6.exit");
+            Console.WriteLine("-----------------");
+            Console.WriteLine("a={0} b={1}",A,B);
+            Console.WriteLine("-----------------");
+            Console.WriteLine("enter num(1.6):");
+            int num = int.Parse(Console.ReadLine());
+            while (num >= 1 && num < 6)
+            {
+                if (num == 2)
+                {
+                    Console.SetCursorPosition(12, 2);
+                    Console.WriteLine(A + B);
+                }
+                if (num == 3)
+                {
+                    Console.SetCursorPosition(12, 3);
+                    Console.WriteLine(A * B);
+                }
+                if (num == 4)
+                {
+                    Console.SetCursorPosition(12, 4);
+                    Console.WriteLine(A / B);
+                }
+                if (num == 5)
+                {
+                    Console.SetCursorPosition(12, 5);
+                    Console.WriteLine(A - B);
+                }
+
+            
+            }
+
+
+
+
+
+            Console.ReadKey();
+        }
+    }
+}
